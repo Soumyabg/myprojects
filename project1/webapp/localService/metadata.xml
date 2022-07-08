@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="/BSXC/DATA_LOG_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="DataLog" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CrNo"/>
+                    <PropertyRef Name="StepNo"/>
+                </Key>
+                <Property Name="CompCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Company Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DivCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Division Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrNo" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Request Number" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrDesc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrDateCreated" Type="Edm.DateTime" Precision="7" sap:label="Date created" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrFormEffDate" Type="Edm.DateTime" Precision="7" sap:label="CR Form effective dt" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrCrtdBy" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Created by" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrExptdCmplDt" Type="Edm.DateTime" Precision="7" sap:label="Expected Compl date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ObjectName" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Object Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TemplateId" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Template ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProcessId" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Process ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrType" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Request Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrPriority" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Priority" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrReasonCode" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Reason Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ObjectKey" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Object Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ObjectKeyDesc" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Object Key" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="VerNo" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Object version no" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskAction" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Task action text" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StepNo" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Sequence No" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="OwnerGrp" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Owner group code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskStatus" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Owner group code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskTargetDate" Type="Edm.DateTime" Precision="7" sap:label="Target date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskDateCompleted" Type="Edm.DateTime" Precision="7" sap:label="Task completed on" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskCompletedBy" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Task completed by" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Icon" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Single-Character Indicator" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrTypeDesc" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrReasonDesc" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PriorityDesc" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskDepStep" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskStatusDesc" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Task Dependency step" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedUser" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedUser1" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IndMultiDep" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Multi task dep" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaskTcode" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Char20" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="ActivityLogSet" Relationship="/BSXC/DATA_LOG_SRV.DataLogsToActivityLogs" FromRole="FromRole_DataLogsToActivityLogs" ToRole="ToRole_DataLogsToActivityLogs"/>
+            </EntityType>
+            <EntityType Name="ActivityLog" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CrNo"/>
+                    <PropertyRef Name="Object"/>
+                    <PropertyRef Name="UserName"/>
+                    <PropertyRef Name="DateLog"/>
+                    <PropertyRef Name="TimeLog"/>
+                    <PropertyRef Name="StepNo"/>
+                </Key>
+                <Property Name="CrNo" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Object" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UserName" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DateLog" Type="Edm.DateTime" Nullable="false" Precision="0" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TimeLog" Type="Edm.Time" Nullable="false" Precision="0" sap:label="Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Action" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StepNo" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ViewTxt" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionDetail" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RejRsn" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Desc" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SeqNo" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="DataLog" Relationship="/BSXC/DATA_LOG_SRV.DataLogsToActivityLogs" FromRole="ToRole_DataLogsToActivityLogs" ToRole="FromRole_DataLogsToActivityLogs"/>
+            </EntityType>
+            <EntityType Name="ActivityLogMain" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CrNo"/>
+                    <PropertyRef Name="StepNo"/>
+                </Key>
+                <Property Name="CompCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Company Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DivCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Division Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ObjectName" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Object Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TemplId" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Template ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrNo" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrCreatedBy" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Created by" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrCreatedOn" Type="Edm.DateTime" Precision="0" sap:label="Date created" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrType" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Request Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrDesc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrReasonCode" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Reason Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrPriority" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="Priority" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrStatus" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="overall status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="UserId" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="User ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActivityDate" Type="Edm.DateTime" Precision="0" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActivityTime" Type="Edm.Time" Precision="0" sap:label="Time" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionType" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Action Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ActionDetails" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Action Detail" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StepNo" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ViewName" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="View Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RejectCode" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Reason Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TempDesc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Template Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrTypeDesc" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="Request Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PriorityDesc" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="StatusDesc" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="RsnDesc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Rej Rsn Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ObjectDesc" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Object Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CreatedUser" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="ChangeLog" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="cr_no"/>
+                    <PropertyRef Name="SeqNo"/>
+                </Key>
+                <Property Name="comp_code" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Company Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="div_code" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Division Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="object_name" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Object Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="template_id" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Template ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="cr_no" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="cr_desc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="cr_crtd_by" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Created by" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="cr_date_created" Type="Edm.DateTime" Precision="0" sap:label="Date created" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="task_desc" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Task Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="view_name" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="View Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="field_name" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Data view field name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="field_desc" Type="Edm.String" Nullable="false" MaxLength="40" sap:label="Fld/Log Descr." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="old_value" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Old Vlalue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="new_value" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="New Vlalue" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="changed_by" Type="Edm.String" Nullable="false" MaxLength="12" sap:label="Changed by" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="date_changed" Type="Edm.DateTime" Precision="0" sap:label="Date changed" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="time_changed" Type="Edm.Time" Precision="0" sap:label="Time Chg. On" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="temp_desc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Template Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="obj_desc" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="created_user" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="status_desc" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="cr_status" Type="Edm.String" Nullable="false" MaxLength="1" sap:label="overall status" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SeqNo" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ChangedUSer" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="UserDefaults" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Uname"/>
+                </Key>
+                <Property Name="Uname" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Objectname" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TemplateID" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrType" Type="Edm.String" Nullable="false" sap:label="CR Type" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ReasonCode" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Reason Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DivCode" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CrPriority" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="DivCode" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Code"/>
+                </Key>
+                <Property Name="Code" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Division Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DivDesc" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Div Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CompCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Company Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FactCal" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Factory calend." sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Priorty" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="Key" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Value" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="ReqType" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Key"/>
+                </Key>
+                <Property Name="Key" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Value" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Object" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ObjectName"/>
+                </Key>
+                <Property Name="ObjectName" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Object Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ObjectDesc" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="Object Description" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Template" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ObjectName"/>
+                    <PropertyRef Name="TemplateId"/>
+                </Key>
+                <Property Name="ObjectName" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Object Name" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TemplateId" Type="Edm.String" Nullable="false" MaxLength="2" sap:label="Template ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TemplateDesc" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="Template Desc" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <Association Name="DataLogsToActivityLogs" sap:content-version="1">
+                <End Type="/BSXC/DATA_LOG_SRV.DataLog" Multiplicity="1" Role="FromRole_DataLogsToActivityLogs"/>
+                <End Type="/BSXC/DATA_LOG_SRV.ActivityLog" Multiplicity="*" Role="ToRole_DataLogsToActivityLogs"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_DataLogsToActivityLogs">
+                        <PropertyRef Name="CrNo"/>
+                        <PropertyRef Name="StepNo"/>
+                    </Principal>
+                    <Dependent Role="ToRole_DataLogsToActivityLogs">
+                        <PropertyRef Name="CrNo"/>
+                        <PropertyRef Name="StepNo"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="/BSXC/DATA_LOG_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="DataLogSet" EntityType="/BSXC/DATA_LOG_SRV.DataLog" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="ActiveLogSet" EntityType="/BSXC/DATA_LOG_SRV.ActivityLog" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ActivityLogMainSet" EntityType="/BSXC/DATA_LOG_SRV.ActivityLogMain" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ChangeLogSet" EntityType="/BSXC/DATA_LOG_SRV.ChangeLog" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="UserDefaultsSet" EntityType="/BSXC/DATA_LOG_SRV.UserDefaults" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="DivCodeSet" EntityType="/BSXC/DATA_LOG_SRV.DivCode" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="PriortySet" EntityType="/BSXC/DATA_LOG_SRV.Priorty" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ReqTypeSet" EntityType="/BSXC/DATA_LOG_SRV.ReqType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ObjectSet" EntityType="/BSXC/DATA_LOG_SRV.Object" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="TemplateSet" EntityType="/BSXC/DATA_LOG_SRV.Template" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="DataLogsToActivityLogsSet" Association="/BSXC/DATA_LOG_SRV.DataLogsToActivityLogs" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="DataLogSet" Role="FromRole_DataLogsToActivityLogs"/>
+                    <End EntitySet="ActiveLogSet" Role="ToRole_DataLogsToActivityLogs"/>
+                </AssociationSet>
+            </EntityContainer>
+            <atom:link rel="self" href="https://bsxdev.bluestonex.com:5000/sap/opu/odata/bsxc/DATA_LOG_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://bsxdev.bluestonex.com:5000/sap/opu/odata/bsxc/DATA_LOG_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
